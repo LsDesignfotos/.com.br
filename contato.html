@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LS DESIGN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: #0d0d0d;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    
+    <link rel="stylesheet" href="css/particles-override.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+<canvas id="bg-animation"></canvas>
+  <canvas id="bg-particles"></canvas>
+
+  <video class="bg" autoplay muted loop playsinline>
+    <source src="assets/background.mp4" type="video/mp4"/>
+  </video>
+  <div class="overlay"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">LS DESIGN</a>
+    <nav class="nav">
+      <a href="index.html#portfolio">Portfólio</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="precos.html">Preços</a>
+      <a href="https://wa.me/556198574343" target="_blank" rel="noopener">Contato</a>
+    </nav>
+  </header>
+
+  <a class="whats" href="https://wa.me/556198574343" target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+    <!-- WhatsApp icon SVG -->
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M19.11 17.21c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.43-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.5.15-.17.19-.29.29-.48.1-.2.05-.36-.03-.51-.08-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49l-.55-.01c-.2 0-.51.07-.78.36-.26.29-1 1-1 2.44 0 1.44 1.03 2.83 1.17 3.02.15.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.62.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.18-.55-.33z"/><path fill="currentColor" d="M26.02 5.98C23.21 3.17 19.7 1.66 16 1.66S8.79 3.17 5.98 5.98C3.17 8.79 1.66 12.3 1.66 16c0 2.18.58 4.3 1.68 6.16L1 31l8.99-2.29C11.7 29.96 13.83 30.34 16 30.34c3.7 0 7.21-1.51 10.02-4.32C28.83 23.21 30.34 19.7 30.34 16s-1.51-7.21-4.32-10.02zM16 27.97c-1.99 0-3.92-.52-5.62-1.52l-.4-.24-5.33 1.36 1.42-5.19-.26-.42C4.78 19.22 4.34 17.63 4.34 16 4.34 10.48 10.48 4.34 16 4.34S27.66 10.48 27.66 16 21.52 27.97 16 27.97z"/></svg>
+  </a>
+
+  <section class="hero small">
+    <h1 class="logo">Contato</h1>
+    <p class="tag">Atendimento rápido pelo WhatsApp.</p>
+    <a class="btn" href="https://wa.me/556198574343" target="_blank" rel="noopener">Abrir WhatsApp</a>
+  </section>
+
+  
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2 class="footer-title">LS DESIGN</h2>
+      <p class="footer-description">
+        Criamos experiências digitais modernas, estratégicas e impactantes.
+      </p>
+    </div>
+    <div class="footer-links">
+      <h3>Links rápidos</h3>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#portfolio">Portfólio</a>
+        <a href="https://wa.me/556198574343?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20LS%20DESIGN." target="_blank">Contato</a>
+      </nav>
+    </div>
+    <div class="footer-quote">
+      <h3>Nosso lema</h3>
+      <p>“Transformamos ideias em soluções digitais que geram resultados.”</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 LS DESIGN. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute("href"));
+        if (destino) {
+          destino.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+    });
+  });
+</script>
+
+
+
+  <script src="js/app.js"></script>
+
+    <script src="js/bg-animation.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    
+</body>
+</html>

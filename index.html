@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LS DESIGN</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+
+<style>
+    footer {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    body {
+        background-color: #000 !important;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+    }
+</style>
+
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #000 !important; /* Mantém o fundo preto */
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1 0 auto; /* Faz o conteúdo ocupar todo o espaço disponível */
+    }
+    footer {
+        flex-shrink: 0;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+</style>
+
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="css/particles-override.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+<canvas id="bg-animation"></canvas>
+<canvas id="bg-particles"></canvas>
+<div class="overlay"></div>
+
+<section class="hero">
+<h1 class="logo">LS DESIGN</h1>
+<p class="tag">Edição e tratamento de imagens para marcas que querem vender mais.</p>
+<a class="btn-contato" href="#contato">Ver Portfólio</a>
+</section>
+<main>
+<section class="section" id="portfolio">
+<h2 class="title-sec">Antes &amp; Depois</h2>
+<p class="desc">Arraste o controle para comparar as versões.</p>
+<div class="grid-compare">
+<div class="compare" data-start="70">
+<img alt="Antes - Feijoada" class="base" src="images/feijoada_before.jpg"/>
+<div class="mask"><img alt="Depois - Feijoada" class="top" src="images/feijoada_after.png"/></div>
+<input aria-label="Comparar Feijoada" class="range" max="100" min="0" type="range" value="70"/>
+<span class="divider"></span>
+<div class="lbl"><span>Antes</span><span>Depois</span></div>
+</div>
+<div class="compare" data-start="70">
+<img alt="Antes - Pizza" class="base" src="images/pizza_before.jpeg"/>
+<div class="mask"><img alt="Depois - Pizza" class="top" src="images/pizza_after.png"/></div>
+<input aria-label="Comparar Pizza" class="range" max="100" min="0" type="range" value="70"/>
+<span class="divider"></span>
+<div class="lbl"><span>Antes</span><span>Depois</span></div>
+</div>
+</div>
+</section></main>
+<section class="servicos" id="servicos">
+<h2 class="section-title-dark">Serviços</h2>
+<p class="section-subtitle-dark">Pacotes sob medida para sua marca.</p>
+<div class="cards-servicos">
+<div class="card-servico">
+<i class="icon">🖼️</i>
+<h3>Edição Essencial</h3>
+<p>Correções de luz, cor, corte e alinhamento.</p>
+</div>
+<div class="card-servico">
+<i class="icon">✂️</i>
+<h3>Recorte &amp; Composição</h3>
+<p>Fundo limpo e composição de produto.</p>
+</div>
+<div class="card-servico">
+<i class="icon">✨</i>
+<h3>Tratamento Avançado</h3>
+<p>Retoques finos, realce de textura e cor.</p>
+</div>
+<div class="card-servico">
+<i class="icon">📢</i>
+<h3>Banners Publicitários</h3>
+<p>Peças de alto impacto para campanhas.</p>
+</div>
+<div class="card-servico">
+<i class="icon">📐</i>
+<h3>Identidade Visual</h3>
+<p>Logo, tipografia e paleta sob medida.</p>
+</div>
+<div class="card-servico">
+<i class="icon">📱</i>
+<h3>Design para Social</h3>
+<p>Layouts otimizados para Instagram e TikTok.</p>
+</div>
+<div class="card-servico">
+<i class="icon">🖌️</i>
+<h3>Restauração de Fotos</h3>
+<p>Recuperação e revitalização com qualidade.</p>
+</div>
+</div>
+</section>
+<section class="precos dark">
+<h2 class="section-title-dark">Nossos Planos</h2>
+<div class="tabela-precos-dark">
+<div class="plano-card-dark">
+<h3>Plano Básico</h3>
+<p class="plano-preco-dark preco" style="color: #fff;">R$50</p>
+<p class="plano-detalhes-dark">5 Fotos</p>
+<a class="btn-contratar-dark" href="https://wa.me/556198574343?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20B%C3%A1sico%20de%20R%2450%20%285%20fotos%29." target="_blank">Contratar</a>
+</div>
+<div class="plano-card-dark">
+<h3>Plano Recomendado <span class="selo-popular">Mais Popular</span></h3>
+<p class="plano-preco-dark preco" style="color: #fff;">R$100</p>
+<p class="plano-detalhes-dark">10 Fotos + 2 de Brinde</p>
+<a class="btn-contratar-dark" href="https://wa.me/556198574343?text=Ol%C3%A1%2C%20quero%20contratar%20o%20Plano%20Recomendado%20de%20R%24100%20%2810%20fotos%20%2B%202%20brinde%29." target="_blank">Contratar</a>
+</div>
+<div class="plano-card-dark">
+<h3>Plano Premium</h3>
+<p class="plano-preco-dark preco" style="color: #fff;">R$150</p>
+<p class="plano-detalhes-dark">15 Fotos + 4 de Brinde</p>
+<a class="btn-contratar-dark" href="https://wa.me/556198574343?text=Ol%C3%A1%2C%20gostaria%20do%20Plano%20Premium%20de%20R%24150%20%2815%20fotos%20%2B%204%20brinde%29." target="_blank">Contratar</a>
+</div>
+<div class="plano-card-dark">
+<h3>Plano Personalizado</h3>
+<p class="plano-preco-dark preco" style="color: #fff;">Sob Consulta</p>
+<p class="plano-detalhes-dark">Escolha quantas fotos deseja</p>
+<a class="btn-contratar-dark solicitar" href="https://wa.me/556198574343?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20um%20plano%20personalizado." target="_blank">Solicitar</a>
+</div>
+</div>
+</section>
+<!-- Font Awesome para ícones modernos -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Importar ícones Font Awesome -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2 class="footer-title">LS DESIGN</h2>
+        <p class="footer-description">
+          Criamos experiências digitais modernas, estratégicas e impactantes.
+        </p>
+      </div>
+      <div class="footer-links">
+        <nav>
+          <a href="index.html"><i class="fas fa-home"></i> Início</a>
+          <a href="#servicos"><i class="fas fa-cogs"></i> Serviços</a>
+          <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfólio</a>
+          <a href="https://wa.me/556198574343?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os!"
+             target="_blank" class="whatsapp-link">
+             <i class="fab fa-whatsapp"></i> Contato
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-quote">
+      <h3>Nosso lema</h3>
+      <p>“Transformamos ideias em soluções digitais que geram resultados.”</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 LS DESIGN. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute("href"));
+        if (destino) {
+          destino.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+    });
+  });
+</script>
+<script src="js/app.js"></script>
+<script>
+    lucide.createIcons();
+  </script>
+    <script src="js/background-animation.js"></script>
+    <script src="js/bg-animation.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    
+</body>
+</html>

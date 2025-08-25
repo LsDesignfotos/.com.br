@@ -1,0 +1,16 @@
+
+/* Fundo animado ocupa tudo e define cor base preta */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0d0d0d !important;
+}
+
+/* Mantém todos os elementos transparentes para exibir as partículas */
+html, body, header, footer, section, div, main {
+    background: transparent !important;
+}
